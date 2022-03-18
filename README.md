@@ -1,8 +1,6 @@
 # SafeBikeRoute
 
-Mapping a safer future for cyclists.
-
-This application was designed to help cyclists and advocates visualize, process and update data to improve bike-related saftey in the city of Toronto.
+A web application to help cyclists visualize, process and update data to improve saftey.
 
 ### Technical Stack
 
@@ -26,15 +24,17 @@ Database
 ### Steps to run the application
 
 ```
-1) Create a Mongo DB Connection URI
-2) Open the backend folder and Run seeder scripts to load the dataset into the database using the following command:
+1) Create a Mongo DB Connection URI and add it to .env file in the backend
+2) Create a Google Cloud Account and Google Maps API key to access google maps and add the key in index.html file the public folder in front-end
+3) Open the backend folder and Run seeder scripts to load the dataset into the database using the following command:
 node seed.js
-3) In the backend folder run the following command to start the server:
+4) In the backend folder run the following command to start the server:
 npm install -----> to install all the required packages
 npm start   -----> to start the server
 The server will run on 3001 port
-4) In the frontend folder run the following command to start the Landing Page
+5) In the frontend folder run the following command to start the Landing Page
 npm install -----> to install all the required packages
 npm start   -----> to start the server
-The front end of the application will run on 3001 port
+The front end of the application will run on 3000 port
+Open the http://localhost:3000/ in the browser to access the application
 ```
